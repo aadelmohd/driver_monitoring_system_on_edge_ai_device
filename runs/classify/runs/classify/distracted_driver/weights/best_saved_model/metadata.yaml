@@ -1,0 +1,23 @@
+description: Ultralytics YOLOv8n-cls model trained on dataset
+author: Ultralytics
+date: '2026-04-21T17:31:31.443511'
+version: 8.4.41
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 1
+task: classify
+batch: 1
+imgsz:
+- 64
+- 64
+names:
+  0: normal
+  1: phone
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: true
+  nms: false
+channels: 3
+end2end: false
