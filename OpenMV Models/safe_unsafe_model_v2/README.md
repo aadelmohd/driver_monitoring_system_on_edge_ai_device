@@ -2,60 +2,50 @@
 
 ## Overview
 
-This project detects **safe vs unsafe driving behavior** using an Edge Impulse model deployed on OpenMV.
-
-It runs in real-time and shows:
-
-* **SAFE** (green)
-* **UNSAFE + ALERT** (red)
+This project detects **safe vs unsafe driving behavior** using an Edge Impulse model on an OpenMV device.
 
 ---
 
-## Structure
+## Project Structure
 
-```
+```text
 safe_unsafe_model_v2/
-  model/
-    model.tflite
-    labels.txt
-    inference.py
-
-  metrics/
-    confusion_matrix.png
-    metrics_summary.png
-    edge_impulse_results.png
-
-  recordings/
-    demo_run.mp4
+  model/        -> model files (tflite, labels, code)
+  metrics/      -> evaluation results (confusion matrix, metrics)
+  recordings/   -> demo video output
+  README.md
 ```
+
+---
+
+## How it works
+
+* Captures image from camera
+* Runs ML model
+* Classifies as SAFE or UNSAFE
+* Shows alert for unsafe driving
 
 ---
 
 ## Features
 
-* Real-time detection on OpenMV
-* Confidence threshold for unsafe detection
-* Multiple frame check to reduce false alerts
+* Real-time detection
+* Confidence threshold filtering
+* Multi-frame confirmation (reduces false alerts)
 
 ---
 
 ## Performance
 
-* Accuracy: ~98%
+* Accuracy: ~98.6%
 * F1 Score: ~0.99
-
----
-
-## Demo
-
-See `recordings/demo_run.mp4`
 
 ---
 
 ## Notes
 
 * Model trained using Edge Impulse
-* Optimized for edge device (OpenMV)
+* Runs on OpenMV (edge device)
 
 ---
 
