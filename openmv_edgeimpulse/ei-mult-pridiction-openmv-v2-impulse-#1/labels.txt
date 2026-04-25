@@ -1,0 +1,4 @@
+safe
+unsafe(drinking)
+unsafe(driver distracted)
+unsafe(using mobile)
