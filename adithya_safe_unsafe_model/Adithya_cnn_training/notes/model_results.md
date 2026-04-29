@@ -33,3 +33,24 @@
 - `models/safe_unsafe_model.keras`
 - `results/training_curves.png`
 - `notes/model_results.md`
+
+## Unseen Test Set Evaluation
+A separate test set was also used to check final model performance.
+
+### Test Accuracy
+- **91.67%**
+
+### Test Classification Report
+- **Safe**
+  - Precision: 1.00
+  - Recall: 0.83
+  - F1-score: 0.91
+
+- **Unsafe**
+  - Precision: 0.86
+  - Recall: 1.00
+  - F1-score: 0.92
+
+### Test Confusion Matrix
+[[10, 2],
+ [0, 12]]
