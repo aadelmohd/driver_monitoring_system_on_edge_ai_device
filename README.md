@@ -37,13 +37,19 @@ The implementation documented in this folder focuses on the TensorFlow/Keras →
 | 1. | EfficientNet | Edge Impulse | 86.36 |
 | 2. | MobileNet v1 | Edge Impulse | 31.82 |
 | 3. | CNN Multi-class | Edge Impulse | 85.88 |
-| 4. | CNN Multi-class (Data Augmented) | Local Device - CPU | 91.67 |
+| 4. | CNN (Data Augmented) | Local Device - CPU | 91.67 |
 | 5. | FOMO Multi-class | Edge Impulse | 91.00 |
 | 6. | FOMO Multi-class (Data Augmented) | Edge Impulse | 90.83 |
 | 7. | CNN Binary | Edge Impulse | 99.12 |
 | 8. | CNN Binary (Data Augmented) | Local Device - CPU | 86.19 |
 
 ---
+
+### Best Model:
+#### CNN Binary (Edge Impulse) 
+Test Accuracy: 99.12
+
+
 
 ## Team Members and Work Division
 
