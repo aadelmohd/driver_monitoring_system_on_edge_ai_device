@@ -30,6 +30,33 @@ The implementation documented in this folder focuses on the **TensorFlow/Keras â
 
 ## Team Members and Work Division
 
+### Tirthraj
+Responsible for the **Data preparation and Edge Impulse CNN Model training**:
+- dataset portioned and uploaded to kaggle as "Reduced Dataset"
+- trained a CNN model on Edge Impulse
+- overlooked tuning using Edge Impulse
+- exported the trained model into tflite
+- ran the testing with a car while running the OpenMV Script
+
+### Aadel
+Responsible for the **Data Collection, EfficientNet training and Local CNN training**:
+- dataset was collected from Kaggle\
+- the Reduced Dataset was used to preprocess into clear directories
+- a Python script was made to split the dataset into train, val, and test (70,15,15) sub-folders.
+- build the Edge Impulse CNN model from scratch in VSCode
+- performed data augmentation
+- data rescaling for normalisation
+- model trained with the same lerning rate and epochs as edge impulse
+- loss and accuracy was calculated based on test set
+- confusion matrix generated with test set
+- classification report generated
+
+### Eshwar:
+Responsible for ***Quantisation and Accelerometer testing***:
+- the CNN model was quantized into TFlite int8 format
+- tested the accelerometer
+- the detection of speed could not be detected using this module
+
 ### Adithya
 Responsible for the **CNN training and evaluation** stage:
 - dataset handling for safe vs unsafe classification
