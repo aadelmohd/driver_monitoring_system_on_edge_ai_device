@@ -1,0 +1,3 @@
+safe
+unsafe(using drinking)
+unsafe(using mobile)
