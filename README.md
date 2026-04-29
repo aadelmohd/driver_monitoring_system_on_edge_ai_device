@@ -48,8 +48,7 @@ The implementation documented in this folder focuses on the TensorFlow/Keras →
 ### Best Model:
 #### CNN Binary (Edge Impulse) 
 Test Accuracy: 99.12
-
-
+Inferencing Time: 858 ms
 
 ## Team Members and Work Division
 
