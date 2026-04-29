@@ -11,21 +11,32 @@ Note: Use this dataset for the project, but currently use only classes C0 to C4;
 Make sure to re-label the classes into safe driving and unsafe driving for the baseline model.
 
 
-
-The accuracy os yolo model is 74%. it predicts the two classes you are using phone or not while driving
-
-
 ## Project Summary
-This project implements a lightweight **driver monitoring system** for binary classification of driver behavior into **safe** and **unsafe** categories using an **edge AI workflow**.
+---
+The project implements a lightweight driver monitoring system for binary classification of driver behaviour into safe and unsafe categories based on cell phone usage in an Edge AI module OpenMV Cam RT1062.
+The goals of this project are:
+•	Train various models
+•	Compare the model performance trained in Edge Impulse vs Local Device
+•	Evaluate the models
+•	Convert to TFLite int8 format (Quantisation)
+•	Deploy on OpenMV module
+•	Test the best model on a car
+•	As a whole build a driver monitoring system 
 
-The main objective was to build a complete end-to-end pipeline that:
-- trains a model on local device/Edge Impulse, 
-- evaluates its classification performance,
-- converts the trained model into **TensorFlow Lite (TFLite)** format,
-- and runs live inference on an **OpenMV camera module**.
-
-The implementation documented in this folder focuses on the **TensorFlow/Keras → TFLite → OpenMV** workflow.
-
+S.No.	Model	Ecosystem	Test Accuracy
+1.	EfficientNet	Edge Impulse	86.36
+2.	MobileNet v1	Edge Impulse	31.82
+3	CNN Multi-class	Edge Impulse	85.88
+4.	CNN Multi-class (Data Augmented)	Local Device - CPU	91.67
+5.	FOMO Multi-class	Edge Impulse	91
+6.	FOMO Multi-class (Data Augmented)	Edge Impulse	90.83
+7.	CNN Binary (Data Augmented)	Edge Impulse	99.12
+8.	CNN Binary (Data Augmented)	Local Device - CPU	86.19
+			
+The main objective was to build a system that encompasses:
+•	Best trained model either on local device or Edge Impulse
+•	Runs live inference on an OpenMV camera module.
+The implementation documented in this folder focuses on the TensorFlow/Keras → TFLite → OpenMV workflow.
 ---
 
 ## Team Members and Work Division
