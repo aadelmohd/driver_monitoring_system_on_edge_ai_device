@@ -1,6 +1,6 @@
-# distracted\_driver\_on\_edge
 # Driver Monitoring System on Edge AI Device
 
+## Dataset
 Kaggle dataset: https://www.kaggle.com/competitions/state-farm-distracted-driver-detection/data
 
 ## Reduced dataset
